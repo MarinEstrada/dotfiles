@@ -1,0 +1,72 @@
+" Initializing plugs
+call plug#begin('~/.vim/plugged')
+
+" Js support vim-jsx
+
+Plug 'mxw/vim-jsx'
+
+"attempt to imporove js/jsx indentation
+Plug 'maxmellon/vim-jsx-pretty'
+
+"Note -> plug 'pangloss/vim-javascrict needs to be disabled to use chemzqm/vim-jsx-improve
+"Plug 'pangloss/vim-javascript'
+"
+"imporove indentation: need to disable vim-javascript plugin to function
+" note ->  added 'let g:jsx_improve_javascriptreact = 0' to botom of file
+Plug 'chemzqm/vim-jsx-improve'
+
+"Nerdtree
+Plug 'scrooloose/nerdtree'
+
+
+"Initialize plugin system
+call plug#end()
+
+set nocompatible	"We're running vim, no vi!
+syntax on		"Enable syntax highlighting
+filetype on		"enable filetype tetection\
+filetype indent on 	"Enable filetype-specificintening
+filetype plugin on 	"Enable filetype=specific plugins
+        " to set colors, donwload from vimcolors.com
+        " save them to .vim/colors
+colorscheme monokai-bold
+" 
+        "
+set colorcolumn=90
+set number
+set nowrap
+"makes tab key = x spaces (defined by tabstop)
+set expandtab
+"makes tab key = 4 spaces
+set tabstop=4
+" makes smart indent indent at 4
+set shiftwidth=4
+set smartindent
+"makes tab key (in insert mode ) insert spaces/tabs to the next indent of the
+"next tabstop (only if preceding char is whitespace
+set smarttab
+set autoindent
+        "speed things up by setting more info in memory
+set hidden
+set history=100
+set showmatch 		"shows the matching parenthesis
+        "map for esc to jk
+":imap jk <Esc>
+        "fonts for vim and siz
+     
+        "fonts for vim and size
+"set guifont=Menlo\ Regular:h14
+"
+set hlsearch            "highlights search results
+set cursorline          "hightlights the line
+set mouse=a             "allows use of mouse
+"set relativenumber
+"let maplearder = " "
+set incsearch
+
+"Gets rid of annoying bell sound"
+set visualbell
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+"uncomment line below to disable javascript react support for vim-jsx- imporve
+"let g:jsx_improve_javascriptreact = 0
