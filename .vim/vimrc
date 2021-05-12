@@ -16,6 +16,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'chemzqm/vim-jsx-improve'
 
 "Nerdtree
+"Note 'let' to allow Nerdtree to show hidden files at the bottom
 Plug 'scrooloose/nerdtree'
 
 
@@ -70,3 +71,15 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 "uncomment line below to disable javascript react support for vim-jsx- imporve
 "let g:jsx_improve_javascriptreact = 0
+
+"to allow showing of hidden files
+let NERDTreeShowHidden=1
+
+
+"leader key allows short cuts in vim
+"you can map your leader key to whatever you want
+"HINT make it a key you don't use often
+let mapleader = " "
+"Leader mappings
+nnoremap <leader>t :NERDTreeToggle<enter>
+nnoremap <leader>y :NERDTree<enter>
