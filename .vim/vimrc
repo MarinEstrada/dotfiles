@@ -83,3 +83,5 @@ let mapleader = " "
 "Leader mappings
 nnoremap <leader>t :NERDTreeToggle<enter>
 nnoremap <leader>y :NERDTree<enter>
+nnoremap <leader>h <C-w>h
+nnoremap <leader>l <C-w>l
