@@ -1,0 +1,3 @@
+# these two files will be downloaded via link_dot_vim script
+.vim/autoload
+.vim/plugged
