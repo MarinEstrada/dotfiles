@@ -85,3 +85,13 @@ nnoremap <leader>t :NERDTreeToggle<enter>
 nnoremap <leader>y :NERDTree<enter>
 nnoremap <leader>h <C-w>h
 nnoremap <leader>l <C-w>l
+
+
+"WSL yank support to allow yanking into windows clipboard
+let s:clip = '/mnt/c/Windows/System32/clip.exe'  "change this path according to your mount point
+if executable(s:clip)
+    augroup WSLYank
+        autocmd!
+        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
+    augroup END
+endif
