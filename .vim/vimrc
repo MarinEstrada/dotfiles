@@ -2,8 +2,14 @@
 call plug#begin('~/.vim/plugged')
 
 " Js support vim-jsx
-
 Plug 'mxw/vim-jsx'
+
+"plugin to autocomplete parenthesis
+Plug 'tmsvg/pear-tree'
+
+" add visual indentation lines
+Plug 'Yggdroot/indentLine'
+
 
 "attempt to imporove js/jsx indentation
 Plug 'maxmellon/vim-jsx-pretty'
@@ -83,8 +89,12 @@ let mapleader = " "
 "Leader mappings
 nnoremap <leader>t :NERDTreeToggle<enter>
 nnoremap <leader>y :NERDTree<enter>
+"move left and right screens
 nnoremap <leader>h <C-w>h
 nnoremap <leader>l <C-w>l
+"move top and bottom screens
+nnoremap <leader>k <C-w>k
+nnoremap <leader>j <C-w>j
 
 
 "WSL yank support to allow yanking into windows clipboard
