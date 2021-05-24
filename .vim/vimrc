@@ -75,6 +75,11 @@ set incsearch
 set visualbell
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+"show whitespace characters
+set listchars+=trail:¬
+set list
+
+
 "uncomment line below to disable javascript react support for vim-jsx- imporve
 "let g:jsx_improve_javascriptreact = 0
 
