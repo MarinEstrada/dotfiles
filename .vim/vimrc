@@ -77,6 +77,12 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 "show whitespace characters
 set listchars+=trail:¬
 set list
+" edit whitespace char color,
+" note: colors may not matchup with designed color based on backround.
+" See :help ctermfg and :help guifg
+" Forground for Terminal (ctermfg) U graphical client (guifg)
+"8 = dark grey
+highlight SpecialKey ctermfg=8
 
 
 "uncomment line below to disable javascript react support for vim-jsx- imporve
