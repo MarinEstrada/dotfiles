@@ -10,7 +10,6 @@ Plug 'tmsvg/pear-tree'
 " add visual indentation lines
 Plug 'Yggdroot/indentLine'
 
-
 "attempt to imporove js/jsx indentation
 Plug 'maxmellon/vim-jsx-pretty'
 
