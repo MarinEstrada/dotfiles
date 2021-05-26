@@ -91,6 +91,10 @@ highlight SpecialKey ctermfg=8
 "to allow showing of hidden files
 let NERDTreeShowHidden=1
 
+"for Plug 'tmsvg/pear-tree'
+"does not let plug temporarily delte second bracket upon <cr>
+"note: ruins '.' repeatability, re undo comment out line below
+let g:pear_tree_repeatable_expand = 0
 
 "leader key allows short cuts in vim
 "you can map your leader key to whatever you want
