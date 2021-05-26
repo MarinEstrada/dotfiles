@@ -151,8 +151,8 @@ YELLOW="\[\e[33m\]"
 MAGENTA="\[\e[35m\]"
 CYAN="\[\e[36m\]"
 RESET="\[\e[0m\]"
-#PS1='\[\e[37;1m\]\u@\[\e[33m\]$(__git_ps1)\[\e[35m\]\W\[\e[36m\]\$\[\e[0m\] ' # this will change your prompt format
-PS1="$WHITE_BOLD\u@$YELLOW$(__git_ps1)$MAGENTA\W$CYAN\$$RESET " # this will change your prompt format
+PS1='\[\e[37;1m\]\u@\[\e[33m\]$(__git_ps1)\[\e[35m\]\W\[\e[36m\]\$\[\e[0m\] ' # this will change your prompt format
+#export PS1="$WHITE_BOLD\u@$YELLOW$(__git_ps1)$MAGENTA\W$CYAN\$$RESET " # this will change your prompt format
 #file paths to windows area for ease of access 
 
 
