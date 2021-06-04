@@ -71,6 +71,7 @@ set showmatch 		"shows the matching parenthesis
 "
 set hlsearch            "highlights search results
 set cursorline          "hightlights the line
+set cursorcolumn          "hightlights the column
 set mouse=a             "allows use of mouse
 "set relativenumber
 "let maplearder = " "
@@ -115,6 +116,12 @@ nnoremap <leader>l <C-w>l
 "move top and bottom screens
 nnoremap <leader>k <C-w>k
 nnoremap <leader>j <C-w>j
+"resize window -> +/- 10 columns wider/thiner
+nnoremap <leader>- :vertical resize -10<enter>
+nnoremap <leader>= :vertical resize +10<enter>
+"resize window -> +/- 5 lines taller or shorter
+nnoremap <leader>_ :resize -5<enter>
+nnoremap <leader>+ :resize +5<enter>
 
 
 "WSL yank support to allow yanking into windows clipboard
