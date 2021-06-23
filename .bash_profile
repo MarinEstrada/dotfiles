@@ -153,7 +153,7 @@ CYAN="\[\e[36m\]"
 RESET="\[\e[0m\]"
 PS1='\[\e[37;1m\]\u@\[\e[33m\]$(__git_ps1)\[\e[35m\]\W\[\e[36m\]\$\[\e[0m\] ' # this will change your prompt format
 #export PS1="$WHITE_BOLD\u@$YELLOW$(__git_ps1)$MAGENTA\W$CYAN\$$RESET " # this will change your prompt format
-#file paths to windows area for ease of access 
+#file paths to windows area for ease of access
 
 
 #these 3 lines were aded for nvm (node.js)
@@ -166,6 +166,9 @@ alias la='ls -alF'
 alias rm='rm -I'
 alias mv='mv -i'
 alias cp='cp -i'
+
+#alias to open files in firefox
+alias ffox='/mnt/c/Users/adria/scoop/apps/firefox/current/firefox.exe'
 
 #if anything goes wrong, refer to original '.bashrc' in backups/
 export WINHOME="/mnt/c/Users/adria/"
