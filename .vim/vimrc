@@ -41,6 +41,13 @@ filetype indent on 	"Enable filetype-specificintening
 filetype plugin on 	"Enable filetype=specific plugins
         " to set colors, donwload from vimcolors.com
         " save them to .vim/colors
+        " Added 3 lines for solarized colorscheme, commenet out if needed
+        "   syntax ln and set background ln & gsolarized termcolrs ln
+        "   ie: ln 48 through 50
+        " set background to light or dark for pref on solarized
+syntax enable
+set background=light
+let g:solarized_termcolors=256
 colorscheme monokai-bold
 
         "
