@@ -174,3 +174,4 @@ alias ffox='/mnt/c/Users/adria/scoop/apps/firefox/current/firefox.exe'
 export WINHOME="/mnt/c/Users/adria/"
 export AWS="$WINHOME/cmpt/AWS/"
 export GETVITE="$WINHOME/cmpt/bro_workfolder/getvite/"
+export SFU="$WINHOME/sfu/"
