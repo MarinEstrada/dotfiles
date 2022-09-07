@@ -1,0 +1,11 @@
+#if anything goes wrong, refer to original '.bashrc' in backups/
+export WINHOME="/mnt/c/Users/adria/"
+export AWS="$WINHOME/cmpt/AWS/"
+export GETVITE="$WINHOME/cmpt/bro_workfolder/getvite/"
+export SFU="$WINHOME/sfu/"
+ssh -p24 ama269@gateway.csil.sfu.ca
+//use to change password after having logged in to mysql
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+//comment out this line in '/etc/phpmyadmin/config.inc.php' to ensure php requires a password 
+$cfg['Servers'][$i]['AllowNoPassword'] = TRUE;
+
