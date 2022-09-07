@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'mxw/vim-jsx'
 
 "plugin to autocomplete parenthesis
-Plug 'tmsvg/pear-tree'
+"Plug 'tmsvg/pear-tree'
 
 "to surround selected text with ''/{}/etc
 Plug 'tpope/vim-surround'
