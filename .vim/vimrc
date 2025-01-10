@@ -76,6 +76,20 @@ set showmatch 		"shows the matching parenthesis
         "fonts for vim and size
 "set guifont=Menlo\ Regular:h14
 "
+"setting cursor:
+"Reference chart of values
+"   Ps = 0 -> blinking block
+"   Ps = 1 -> blinking block (default)
+"   Ps = 2 -> steady block
+"   Ps = 3 -> blinking underline
+"   Ps = 4 -> steady underline
+"   Ps = 5 -> blinking bar (xterm)
+"   Ps = 6 -> steady bar (xterm)
+let &t_SI = "\e[6 q" "for insert mode
+let &t_EI = "\e[6 q" "for normal mode
+
+
+"
 set hlsearch            "highlights search results
 set cursorline          "hightlights the line
 set cursorcolumn          "hightlights the column
